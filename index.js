@@ -5,6 +5,7 @@ app.use(express.json());
 
 //Current TimeStamp
 let currenttime = new Date().toLocaleTimeString();
+//
 //Date-Time
 let datetime = new Date();
 console.log(datetime);
