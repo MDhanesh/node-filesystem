@@ -1,15 +1,15 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
-app.use(express.json());
+//app.use(express.json());
 
 //Current TimeStamp
 let currenttime = new Date().toLocaleTimeString();
 //Date-Time
 let datetime = new Date();
-console.log(datetime);
+console.log(datetime, "11");
 let timestamp = `${datetime.getDate()}-${datetime.getMonth()}-${datetime.getFullYear()}-${datetime.getHours()}-${datetime.getMinutes()}-${datetime.getSeconds()}`;
-console.log(timestamp);
+//console.log(timestamp);
 
 //Creating folder
 app.post("/create", (req, res) => {
@@ -38,4 +38,4 @@ app.get("/get", (req, res) => {
   res.send(time);
 });
 
-app.listen(3000);
+app.listen(4000);
