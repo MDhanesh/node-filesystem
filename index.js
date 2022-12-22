@@ -7,7 +7,7 @@ const app = express();
 let currenttime = new Date().toLocaleTimeString();
 //Date-Time
 let datetime = new Date();
-console.log(datetime, "11");
+//console.log(datetime);
 let timestamp = `${datetime.getDate()}-${datetime.getMonth()}-${datetime.getFullYear()}-${datetime.getHours()}-${datetime.getMinutes()}-${datetime.getSeconds()}`;
 //console.log(timestamp);
 
