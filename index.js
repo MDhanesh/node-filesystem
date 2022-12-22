@@ -30,7 +30,7 @@ app.post("/create", (req, res) => {
 });
 
 //get the data created
-app.get("/get", (req, rest) => {
+app.get("/get", (req, res) => {
   let time = fs.readdirSync(`./file/`);
   time.forEach((file) => {
     console.log(file);
