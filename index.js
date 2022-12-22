@@ -12,7 +12,7 @@ let timestamp = `${datetime.getDate()}-${datetime.getMonth()}-${datetime.getFull
 //console.log(timestamp);
 
 //Creating folder
-app.post("/create", (req, res) => {
+app.get("/create", (req, res) => {
   fs.writeFile(
     `./file/${timestamp}.txt`,
     `The Current Timestamp
