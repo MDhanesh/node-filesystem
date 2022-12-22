@@ -1,2 +1,0 @@
-The Current Timestamp
-  is 1671690847144

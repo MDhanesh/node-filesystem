@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 //Current TimeStamp
-let currenttime = new Date().getTime();
+let currenttime = new Date().toLocaleTimeString();
 //Date-Time
 let datetime = new Date();
 console.log(datetime);
@@ -35,7 +35,7 @@ app.get("/get", (req, rest) => {
   time.forEach((file) => {
     console.log(file);
   });
-  res.send(time, "file get");
+  res.send(time);
 });
 
 app.listen(3000);
