@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 //Current TimeStamp
-let currenttime = new Date().toLocaleTimeString();
+let currenttime = new Date().getTime();
 //
 //Date-Time
 let datetime = new Date();
